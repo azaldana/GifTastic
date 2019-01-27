@@ -96,3 +96,9 @@ button:hover {
      width: 23%;
     } 
  }
+
+ @media(max-width:480px){
+    button {
+     width: 30%;
+    } 
+ }
