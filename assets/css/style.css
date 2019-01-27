@@ -1,54 +1,98 @@
 #shows-view div{
     display: inline-block;
-    padding: 10px;
     font-size: 20px;
     text-align: center;
+    margin: 15px;
 }
 
 
 p {
     margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: bold;
+    color: #777;
+    text-transform: uppercase;
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 40px;
+    font-size: 50px;
+    color: rgb(73, 180, 207);
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    letter-spacing: 2px;
 }
 
 button {
-    border: 1px solid #777;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid rgb(73, 180, 207);
+    color: #777;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 14px;
-    background-color: rgb(209, 209, 209);
-    margin: 10px 10px 5px 20px;
-    padding: 5px;
+    margin: 20px;
+    padding: 10px;
+    width: 16%;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(73, 180, 207);
 }
 
 .container {
-   border: 2px solid rgb(185, 185, 185);
+   /* border: 2px solid rgb(185, 185, 185); */
+   margin: 0 auto;
+   width: 90%;
+   align-content: center;
 }
 
 #tv-input {
     margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #tv-form {
-    margin-left: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgb(73, 180, 207);
+    letter-spacing: 1px;
 }
 
 #add-show {
     margin-top: 20px;
-    border: 1px solid #777;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    border: 2px solid rgb(73, 180, 207);
+    color: #777;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
 }
+
+#add-show:hover {
+    color: white;
+    background-color: rgb(73, 180, 207);
+}
+
+@media(max-width:768px){
+   button {
+    width: 20%;
+   } 
+}
+
+@media(max-width:640px){
+    button {
+     width: 23%;
+    } 
+ }

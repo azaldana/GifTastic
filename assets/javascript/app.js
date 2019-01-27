@@ -1,4 +1,4 @@
-var topics = ["The Office", "Family Guy", "Parks and Rec", "New Girl", "Blackish", "American Dad", "Spongebob", "Friends", "The Good Place", "Modern Family", "Saturday Night Live", "Arrested Development", "Bobs Burgers", "Community", "Will and Grace", "Broad City", "30 Rock", "Big Bang Theory", "Seinfeld"];
+var topics = ["The Office", "Family Guy", "Parks and Rec", "New Girl", "Blackish", "American Dad", "Spongebob", "Friends", "The Good Place", "Modern Family", "Saturday Night Live", "Arrested Development", "Bobs Burgers", "Community", "Will and Grace"];
 
 var app = $('#shows-view');
 var still ='';
@@ -25,7 +25,7 @@ app.empty();
         var $rating = results[i].rating;
         var $p = $('<p>').text("Rating: " + $rating);
 
-        $div.prepend($p);
+        $div.append($p);
 
         still = results[i].images.fixed_height_still.url;
         animate = results[i].images.fixed_height.url;
@@ -74,6 +74,7 @@ function renderButtons(){
         a.attr("data-name", topics[i]);
         a.text(topics[i]);
         $("#buttons-view").append(a);
+        $("#tv-input").val('')
     }
 }
 
